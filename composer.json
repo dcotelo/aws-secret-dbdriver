@@ -1,5 +1,5 @@
 {
-    "name": "dcotelo/aws-secret",
+    "name": "dcotelo/secretDBdriver",
     "description": "Easy db auth from aws secret manager",
     "type": "library",
     "license":      "MIT",
@@ -17,14 +17,15 @@
     "repositories": [
         {
           "type": "git",
-          "url": "https://github.com/dcotelo/aws-secret"
+          "url": "https://github.com/dcotelo/secretDBdriver"
         }
       ],
-    "extra": {
+      "extra": {
         "laravel": {
             "providers": [
-                "dcotelo\\aws-secret\\DatabaseSecretProvider"
+                "dcotelo\\secretDBdriver\\DatabaseSecretProvider"
             ]
         }
     }
 }
+

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcotelo\AwsSecret;
+namespace Dcotelo\secretDBdriver;
 
 use Illuminate\Support\ServiceProvider;
 
