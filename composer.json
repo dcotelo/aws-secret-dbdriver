@@ -1,0 +1,23 @@
+{
+    "name": "dcotelo/aws-secret",
+    "description": "Easy db auth from aws secret manager",
+    "type": "library",
+    "require": {
+        "aws/aws-sdk-php": "^3.128",
+        "aws/aws-sdk-php-laravel": "^3.4",
+        "guzzlehttp/guzzle": "^6.4"
+    },
+    "authors": [
+        {
+            "name": "Diego",
+            "email": "dcotelo@iolabs.uy"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "dcotelo\\aws-secret\\DatabaseSecretProvider"
+            ]
+        }
+    }
+}
