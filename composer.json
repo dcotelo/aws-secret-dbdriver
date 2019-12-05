@@ -13,7 +13,7 @@
             "name": "Diego",
             "email": "dcotelo@iolabs.uy"
         }
-    ],
+    ]
     "repositories": [
         {
           "type": "git",
