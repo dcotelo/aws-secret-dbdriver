@@ -24,7 +24,7 @@
         "laravel": {
             "providers": [
                 "dcotelo\\secretDBdriver\\Providers\\DatabaseSecretProvider",
-                "dcotelo\\secretDBdriver\\Providers\\DatabaseSecretProvider",
+                "dcotelo\\secretDBdriver\\Providers\\DatabaseServiceProvider"
             ]
         }
     }
