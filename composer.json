@@ -23,7 +23,8 @@
       "extra": {
         "laravel": {
             "providers": [
-                "dcotelo\\secretDBdriver\\DatabaseSecretProvider"
+                "dcotelo\\secretDBdriver\\Providers\\DatabaseSecretProvider",
+                "dcotelo\\secretDBdriver\\Providers\\DatabaseSecretProvider",
             ]
         }
     }

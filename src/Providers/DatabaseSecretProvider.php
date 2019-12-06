@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcotelo\secretDBdriver;
+namespace dcotelo\secretDBdriver;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,9 @@ class DatabaseSecretProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/config/secret.php' => config_path('secret.php'),
+        ]);
     }
 
     /**
