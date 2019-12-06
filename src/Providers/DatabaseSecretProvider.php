@@ -1,7 +1,6 @@
 <?php
 
-namespace dcotelo\Providers\secretDBdriver;
-
+namespace dcotelo\secretDBdriver\Providers;
 use Illuminate\Support\ServiceProvider;
 
 class DatabaseSecretProvider extends ServiceProvider
