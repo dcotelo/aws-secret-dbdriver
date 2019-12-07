@@ -23,7 +23,7 @@
       "autoload": {
         "psr-4": {
             "dcotelo\\secretDBdriver\\": "src/",
-            "dcotelo\\secretDBdriver\\Providers": "src/providers/"
+            "dcotelo\\secretDBdriver\\Providers\\": "src/providers/"
         }
     },
       "extra": {
