@@ -19,6 +19,19 @@
           "type": "git",
           "url": "https://github.com/dcotelo/aws-secret-dbdriver"
         }
-      ]
+      ],
+      "autoload": {
+        "psr-4": {
+            "dcotelo\\secretDBdriver\\": "src/"
+        }
+    },
+      "extra": {
+        "laravel": {
+            "providers": [
+                "dcotelo\\secretDBdriver\\Providers\\DatabaseSecretProvider",
+                "dcotelo\\secretDBdriver\\Providers\\DatabaseServiceProvider"
+            ]
+        }
+    }
 }
 
