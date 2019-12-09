@@ -14,12 +14,10 @@ class DatabaseManager extends BaseDatabaseManager
 {
     protected function configuration($name)
     {
-        // аргумент $name содержит название подключения 
-        // по названию подключения находим и возвращаем соответствующий конфиг 
 
         $dbconf = Config::get("database.connections." . $name);
-        //if db driver is vault we get it from rest api / cache
-        if ($dbconf['driver'] == 'secret-db') {
+        //if db driver is secret we get it from rest api / cache
+        if ($dbconf['driver'] == 'secret') {
             $config = $this->getSecret($name);
             if (is_null($config)) {
                 //check if config is in cache
@@ -49,7 +47,6 @@ class DatabaseManager extends BaseDatabaseManager
     public function getSecret($secret)
     {
         $cacheKey = "database-config-" . $secret;
-        $cacheKeyBackUp = "database-config-" . $secret;
         $CacheMinutes = Config::get("secret.chache");
         $expiresIn = now()->addMinutes($CacheMinutes);
 
