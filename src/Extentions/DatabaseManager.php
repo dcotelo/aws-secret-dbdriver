@@ -17,7 +17,7 @@ class DatabaseManager extends BaseDatabaseManager
 
         $dbconf = Config::get("database.connections." . $name);
         //if db driver is secret we get it from rest api / cache
-        if ($dbconf['driver'] == 'secret') {
+        if ($dbconf['driver'] == 'secret-db') {
             $config = $this->getSecret($name);
             if (is_null($config)) {
                 //check if config is in cache
@@ -61,7 +61,7 @@ class DatabaseManager extends BaseDatabaseManager
             'region' => env('AWS_REGION'),
         ]);
 
-        $secretName = config('app.name') . '/' .config('app.env') . '/' . $secret;
+        $secretName = config('app.env') . '/'.config('app.name')  . '/' . $secret;
 
         try {
             $result = $client->getSecretValue([

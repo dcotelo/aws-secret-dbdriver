@@ -11,8 +11,8 @@
 
 
 #### Load secrets in AWS Secret Manager as  key/value pairs
-Naming convention:  `<appname>/<env>/<conn_name> `
-**Ex: Blog/stage/mysql**
+Naming convention:  `<env>/<appname>/<conn_name> `
+**Ex: stage/Blog/mysql**
 
 
 #### Database configuration
